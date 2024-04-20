@@ -1,0 +1,22 @@
+@import "@xterm/xterm/css/xterm.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#notice {
+  animation: fadeOut 700ms ease-in-out 5s forwards;
+  /* 700ms duration, ease-in-out, 5s delay, 'forwards' keeps the final state at 0 opacity */
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
